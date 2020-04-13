@@ -1,3 +1,32 @@
+* {
+  padding : 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+//variables
+$dark-mode-background: hsl(230, 17%, 14%);
+$dark-mode-text: hsl(0, 0%, 100%);
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: $dark-mode-background;
+  color: $dark-mode-text;
+}
+.header {
+  padding-top: 43px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.header__title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+}
+  .header__info {
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+}
 .switch {
     position: relative;
     display: inline-block;
