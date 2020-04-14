@@ -4,18 +4,28 @@
   box-sizing: border-box;
 }
 //variables
+//dark mode
 $dark-mode-background: hsl(230, 17%, 14%);
 $dark-mode-text: hsl(0, 0%, 100%);
+
+//light mode
+$light-mode-background:hsl(0, 0%, 100%);
+$light-mode-text: hsl(228, 12%, 44%);
 
 body {
   font-family: 'Inter', sans-serif;
   background-color: $dark-mode-background;
   color: $dark-mode-text;
 }
-.header {
-  padding-top: 43px;
-  padding-left: 25px;
-  padding-right: 25px;
+.bg-background-light {
+background-color: $light-mode-background;
+color: $light-mode-text;
+}
+.header { 
+  padding: 43px 25px 80px 25px;
+  background-color: hsl(232, 19%, 15%);
+  border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
 }
 .header__title {
   font-size: 1rem;
@@ -25,13 +35,14 @@ body {
 }
   .header__info {
     padding-bottom: 25px;
-    border-bottom: 1px solid white;
+    border-bottom: 0.1px solid white;
 }
 .switch {
+  margin-top: 0px;
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 55px;
+    height: 25px;
   }
   .switch input { 
     opacity: 0;
@@ -39,8 +50,8 @@ body {
     height: 0;
   } 
   .swithCtl {
-    margin: auto;
-    width: 60%;
+    margin: 25px auto 0;
+    /*width: 60%;*/
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -52,18 +63,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsl(237, 63%, 64%);
+    background: linear-gradient(to right, hsl(210, 78%, 56%) , hsl(146, 68%, 55%) );
     -webkit-transition: .4s;
     transition: .4s;
   } 
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
+    height: 20px;
+    width: 20px;
+    left: 6px;
+    bottom: 3px;
+    background-color: $dark-mode-background;
     -webkit-transition: .4s;
     transition: .4s;
   }
