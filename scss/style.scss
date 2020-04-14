@@ -97,3 +97,16 @@ border-bottom-right-radius: 30px;
   .slider.round:before {
     border-radius: 50%;
   } 
+  main {
+    position: relative;
+    text-align: center;
+}
+  .cards__wrapper {
+    width: 327px;
+    margin: auto;
+    background-color: brown;
+    position: relative;
+    margin: auto;
+    top: -42px;
+    border-radius: 10px;
+}
