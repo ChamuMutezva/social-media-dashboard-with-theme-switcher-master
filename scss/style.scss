@@ -8,10 +8,13 @@
 $dark-mode-background: hsl(230, 17%, 14%);
 $dark-mode-text: rgb(255, 255, 255);
 $dark-mode-card-bg: hsl(228, 28%, 20%) ;
+$dark-mode-background-top-bg: hsl(232, 19%, 15%);
 
 //light mode
 $light-mode-background:hsl(0, 0%, 100%);
 $light-mode-text: hsl(228, 12%, 44%);
+$light-mode-card-bg: hsl(227, 47%, 96%);
+$light-mode-background-top-bg: hsl(225, 100%, 98%);
 
 body {
   font-family: 'Inter', sans-serif;
@@ -24,9 +27,12 @@ color: $light-mode-text;
 }
 .header { 
   padding: 43px 25px 80px 25px;
-  background-color: hsl(232, 19%, 15%);
+  background-color: $dark-mode-background-top-bg;
   border-bottom-left-radius: 30px;
 border-bottom-right-radius: 30px;
+}
+.bg-header-background {
+  background-color: $light-mode-background-top-bg;
 }
 .header__title {
   font-size: 1rem;
@@ -117,6 +123,9 @@ border: 1px solid transparent;
 margin-bottom: 25px;
 border-radius: 10px;
 padding-bottom: 25px;
+}
+.bg-card-background-light {
+  background-color: $light-mode-card-bg;
 }
 .facebook {
   padding: 33px 0;
