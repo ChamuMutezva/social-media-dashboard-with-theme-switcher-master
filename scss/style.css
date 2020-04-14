@@ -117,10 +117,39 @@ main {
 .cards__wrapper {
   width: 327px;
   margin: auto;
-  background-color: brown;
   position: relative;
   margin: auto;
   top: -42px;
   border-radius: 10px;
+}
+
+.primary__card {
+  background-color: #252a41;
+  border: 1px solid transparent;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  padding-bottom: 25px;
+}
+
+.facebook {
+  padding: 33px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.followers__num {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.followers__details {
+  padding-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */
