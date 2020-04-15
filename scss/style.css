@@ -118,8 +118,18 @@ main {
   text-align: center;
 }
 
+.primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .cards__wrapper {
-  width: 327px;
   margin: auto;
   position: relative;
   margin: auto;
@@ -128,9 +138,10 @@ main {
 }
 
 .primary__card {
+  width: 327px;
   background-color: #252a41;
   border: 1px solid transparent;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
   border-radius: 10px;
   padding-bottom: 25px;
 }

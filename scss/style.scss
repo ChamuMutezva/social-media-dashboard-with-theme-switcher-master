@@ -108,8 +108,12 @@ border-bottom-right-radius: 30px;
     position: relative;
     text-align: center;
 }
-  .cards__wrapper {
-    width: 327px;
+.primary {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+  .cards__wrapper {   
     margin: auto;
    // background-color: brown;
     position: relative;
@@ -118,9 +122,10 @@ border-bottom-right-radius: 30px;
     border-radius: 10px;
 }
 .primary__card {
+  width: 327px;
   background-color: $dark-mode-card-bg;
 border: 1px solid transparent;
-margin-bottom: 25px;
+margin: 0 auto 25px;
 border-radius: 10px;
 padding-bottom: 25px;
 }
