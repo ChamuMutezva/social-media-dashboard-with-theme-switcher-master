@@ -173,4 +173,12 @@ main {
 .followers__details {
   padding-bottom: 25px;
 }
+
+.cards__wrapper__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 /*# sourceMappingURL=style.css.map */
