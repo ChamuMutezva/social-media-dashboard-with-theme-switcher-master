@@ -124,7 +124,7 @@ border-bottom-right-radius: 30px;
     border-radius: 10px;
 }
 .primary__card {
-  width: 327px;
+  width: 325px;
   background-color: $dark-mode-card-bg;
 border: 1px solid transparent;
 margin: 0 auto 25px;
@@ -135,19 +135,20 @@ padding-bottom: 25px;
   background-color: $light-mode-card-bg;
 }
 .facebook {
-  padding: 33px 0;
+  padding: 33px 0 15px;
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
 .followers__num {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
 }
 
 .followers__details {
     padding-bottom: 25px;
+    letter-spacing: 6.5px;
 } 
 
 //secondary cards
