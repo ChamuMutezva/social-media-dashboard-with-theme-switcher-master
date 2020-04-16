@@ -20,13 +20,14 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: $dark-mode-background;
   color: $dark-mode-text;
+  font-size: 14px;
 }
 .bg-background-light {
 background-color: $light-mode-background;
 color: $light-mode-text;
 }
 .header { 
-  padding: 43px 25px 80px 25px;
+  padding: 39px 24px 80px 24px;
   background-color: $dark-mode-background-top-bg;
   border-bottom-left-radius: 30px;
 border-bottom-right-radius: 30px;
@@ -35,14 +36,15 @@ border-bottom-right-radius: 30px;
   background-color: $light-mode-background-top-bg;
 }
 .header__title {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 5px;
-  padding-bottom: 10px;
+  letter-spacing: 1.8px;
+  padding-bottom: 3px;
 }
   .header__info {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     border-bottom: 0.1px solid white;
+    font-weight: 700;
 }
 .switch {
   margin-top: 0px;
@@ -57,7 +59,7 @@ border-bottom-right-radius: 30px;
     height: 0;
   } 
   .swithCtl {
-    margin: 25px auto 0;
+    margin: 15px auto 0;
     /*width: 60%;*/
     display: flex;
     justify-content: space-between;

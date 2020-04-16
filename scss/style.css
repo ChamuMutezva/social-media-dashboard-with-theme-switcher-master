@@ -9,6 +9,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #1e202a;
   color: white;
+  font-size: 14px;
 }
 
 .bg-background-light {
@@ -17,7 +18,7 @@ body {
 }
 
 .header {
-  padding: 43px 25px 80px 25px;
+  padding: 39px 24px 80px 24px;
   background-color: #1f212e;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -28,15 +29,16 @@ body {
 }
 
 .header__title {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 5px;
-  padding-bottom: 10px;
+  letter-spacing: 1.8px;
+  padding-bottom: 3px;
 }
 
 .header__info {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   border-bottom: 0.1px solid white;
+  font-weight: 700;
 }
 
 .switch {
@@ -54,7 +56,7 @@ body {
 }
 
 .swithCtl {
-  margin: 25px auto 0;
+  margin: 15px auto 0;
   /*width: 60%;*/
   display: -webkit-box;
   display: -ms-flexbox;
