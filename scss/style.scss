@@ -167,10 +167,24 @@ padding-bottom: 25px;
 
 .secondary__card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-  justify-items: center;
+  grid-template-columns: 1fr 1fr;  
   align-items: center;
   padding-top: 25px;
   row-gap: 28px;
+}
+
+.views, .viewInfo {
+  justify-self: start;
+  margin-left: 19px;
+}
+.secondary__card__img, .updown {
+  justify-self: right;
+  margin-right: 19px;
+}
+.viewInfo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.secondary__card {
+  padding-bottom: 24px;
 }

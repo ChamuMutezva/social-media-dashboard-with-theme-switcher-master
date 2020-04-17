@@ -196,11 +196,31 @@ main {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 25px;
   row-gap: 28px;
+}
+
+.views, .viewInfo {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 19px;
+}
+
+.secondary__card__img, .updown {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin-right: 19px;
+}
+
+.viewInfo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.secondary__card {
+  padding-bottom: 24px;
 }
 /*# sourceMappingURL=style.css.map */
