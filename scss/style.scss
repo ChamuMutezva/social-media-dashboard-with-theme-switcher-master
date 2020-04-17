@@ -113,7 +113,8 @@ border-bottom-right-radius: 30px;
 .primary {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
   .cards__wrapper {   
     margin: auto;
@@ -155,4 +156,20 @@ padding-bottom: 25px;
 .cards__wrapper__sec {
   display: flex;
   flex-wrap: wrap;
+}
+
+.cards__heading {
+  letter-spacing: 1.5px;
+  text-align: left;
+  margin-left: 24px;
+  margin-bottom: 25px;
+}
+
+.secondary__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding-top: 25px;
+  row-gap: 28px;
 }

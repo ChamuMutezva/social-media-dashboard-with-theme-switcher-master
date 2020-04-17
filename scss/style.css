@@ -129,6 +129,7 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .cards__wrapper {
@@ -181,5 +182,25 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.cards__heading {
+  letter-spacing: 1.5px;
+  text-align: left;
+  margin-left: 24px;
+  margin-bottom: 25px;
+}
+
+.secondary__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  row-gap: 28px;
 }
 /*# sourceMappingURL=style.css.map */
