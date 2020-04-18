@@ -136,8 +136,10 @@ padding-bottom: 25px;
 .facebook {
   padding: 33px 0 15px;
   display: flex;
-  justify-content: center;
-  column-gap: 10px;
+  justify-content: center; 
+}
+.facebook img {
+    margin-right: 10px;
 }
 .followers__num {
   font-size: 3.2rem;
