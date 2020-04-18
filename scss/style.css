@@ -133,7 +133,6 @@ main {
 }
 
 .cards__wrapper {
-  margin: auto;
   position: relative;
   margin: auto;
   top: -42px;
@@ -144,7 +143,7 @@ main {
   width: 325px;
   background-color: #252a41;
   border: 1px solid transparent;
-  margin: 0 auto 25px;
+  margin: 0 auto 18px;
   border-radius: 10px;
   padding-bottom: 25px;
 }
@@ -201,6 +200,7 @@ main {
           align-items: center;
   padding-top: 25px;
   row-gap: 28px;
+  padding-bottom: 24px;
 }
 
 .views, .viewInfo {
@@ -222,5 +222,30 @@ main {
 
 .secondary__card {
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 40px 161px 80px 161px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__title {
+    font-size: 1.53rem;
+  }
+  .header__info {
+    border-bottom: none;
+  }
+  .cards__wrapper {
+    top: -54px;
+    margin-left: 161px;
+    margin-right: 161px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

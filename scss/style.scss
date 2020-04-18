@@ -116,9 +116,7 @@ border-bottom-right-radius: 30px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-  .cards__wrapper {   
-    margin: auto;
-   // background-color: brown;
+  .cards__wrapper {      
     position: relative;
     margin: auto;
     top: -42px;
@@ -128,7 +126,7 @@ border-bottom-right-radius: 30px;
   width: 325px;
   background-color: $dark-mode-card-bg;
 border: 1px solid transparent;
-margin: 0 auto 25px;
+margin: 0 auto 18px;
 border-radius: 10px;
 padding-bottom: 25px;
 }
@@ -164,13 +162,13 @@ padding-bottom: 25px;
   margin-left: 24px;
   margin-bottom: 25px;
 }
-
 .secondary__card {
   display: grid;
   grid-template-columns: 1fr 1fr;  
   align-items: center;
   padding-top: 25px;
   row-gap: 28px;
+  padding-bottom: 24px;
 }
 
 .views, .viewInfo {
@@ -187,4 +185,26 @@ padding-bottom: 25px;
 }
 .secondary__card {
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1280px){
+  .header {
+    padding: 40px 161px 80px 161px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+   
+  }
+  .header__title {
+    font-size: 1.53rem;      
+}
+.header__info {  
+  border-bottom: none 
+}
+.cards__wrapper { 
+  top: -54px; 
+  margin-left: 161px;
+margin-right: 161px;
+}
+
 }
