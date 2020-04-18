@@ -181,6 +181,9 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .cards__heading {
@@ -246,6 +249,10 @@ main {
     top: -54px;
     margin-left: 161px;
     margin-right: 161px;
+  }
+  .primary__card {
+    width: 250px;
+    margin: 0 0 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

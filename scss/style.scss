@@ -151,9 +151,10 @@ padding-bottom: 25px;
 } 
 
 //secondary cards
-.cards__wrapper__sec {
-  display: flex;
+.cards__wrapper__sec {  
+  display: flex;  
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cards__heading {
@@ -205,6 +206,10 @@ padding-bottom: 25px;
   top: -54px; 
   margin-left: 161px;
 margin-right: 161px;
+}
+.primary__card {  
+  width: 250px;
+  margin: 0 0 18px; 
 }
 
 }
