@@ -198,11 +198,15 @@ padding-bottom: 25px;
     justify-content: space-between; 
    
   }
+
   .header__title {
     font-size: 1.53rem;      
 }
 .header__info {  
   border-bottom: none 
+}
+nav {
+  width: 150px;
 }
 .cards__wrapper { 
   top: -54px; 

@@ -160,8 +160,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+}
+
+.facebook img {
+  margin-right: 10px;
 }
 
 .followers__num {
@@ -244,6 +246,9 @@ main {
   }
   .header__info {
     border-bottom: none;
+  }
+  nav {
+    width: 150px;
   }
   .cards__wrapper {
     top: -54px;
