@@ -152,7 +152,7 @@ main {
   background-color: #f0f2fa;
 }
 
-.facebook {
+.initialCards {
   padding: 33px 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +162,7 @@ main {
           justify-content: center;
 }
 
-.facebook img {
+.initialCards img {
   margin-right: 10px;
 }
 
