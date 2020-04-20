@@ -16,10 +16,10 @@ switchCtl.addEventListener("click", () => {
     })
     
     console.log(themeTextCtl.innerHTML)
-    if(themeTextCtl.innerHTML == "Dark") {
-        themeTextCtl.innerHTML = "Light" 
-    } else {
+    if(themeTextCtl.innerHTML == "Light") {
         themeTextCtl.innerHTML = "Dark" 
+    } else {
+        themeTextCtl.innerHTML = "Light" 
     }
     
 })
