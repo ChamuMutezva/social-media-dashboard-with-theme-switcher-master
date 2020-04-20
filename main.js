@@ -10,7 +10,7 @@ switchCtl.addEventListener("click", () => {
     console.log("Toggle button clicked");
     bodyTag.classList.toggle("bg-background-light");
     headerTag.classList.toggle("bg-header-background");
-
+    switchCtl.classList.toggle("switchLight");
     primaryCard.forEach(card => {
         card.classList.toggle("bg-card-background-light");
     })

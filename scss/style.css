@@ -80,6 +80,15 @@ body {
   transition: .4s;
 }
 
+.switchLight {
+  background: #aeb3cb;
+}
+
+.switchLight:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
+}
+
 .slider:before {
   position: absolute;
   content: "";
@@ -87,7 +96,7 @@ body {
   width: 20px;
   left: 6px;
   bottom: 3px;
-  background-color: #1e202a;
+  background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -102,6 +111,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
+  background-color: #1e202a;
   -webkit-transform: translateX(26px);
   transform: translateX(26px);
 }
