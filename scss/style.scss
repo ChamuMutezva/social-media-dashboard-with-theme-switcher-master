@@ -26,6 +26,7 @@ body {
 background-color: $light-mode-background;
 color: $light-mode-text;
 }
+
 .header { 
   padding: 39px 24px 80px 24px;
   background-color: $dark-mode-background-top-bg;
@@ -127,11 +128,19 @@ border-bottom-right-radius: 30px;
   background-color: $dark-mode-card-bg;
 border: 1px solid transparent;
 margin: 0 auto 18px;
-border-radius: 10px;
+border-radius: 8px;
 padding-bottom: 25px;
+}
+.primary__card:hover {
+background-color:    hsl(229, 28%, 30%);
+cursor: pointer;
+
 }
 .bg-card-background-light {
   background-color: $light-mode-card-bg;
+}
+.bg-card-background-light:hover {
+  background-color:  hsl(230, 22%, 74%);
 }
 .initialCards {
   padding: 33px 0 15px;
@@ -143,16 +152,24 @@ padding-bottom: 25px;
 }
 .facebook {
   border-top: 4px solid hsl(203, 89%, 53%);
+  border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .twitter {
- border-top: 4px solid hsl(203, 89%, 53%)
+ border-top: 4px solid hsl(203, 89%, 53%);
+ border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .instagram {
   border-top: 4px solid;
   border-image: linear-gradient(85deg, hsl(37, 97%, 70%) , hsl(329, 70%, 58%)) 1;
+  border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .youtube {
   border-top: 4px solid hsl(348, 97%, 39%);
+  border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .followers__num {
   font-size: 3.2rem;
