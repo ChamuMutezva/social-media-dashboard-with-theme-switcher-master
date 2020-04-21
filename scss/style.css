@@ -233,6 +233,23 @@ main {
 .followers__details {
   padding-bottom: 25px;
   letter-spacing: 6.5px;
+  opacity: 0.5;
+}
+
+.initialCards p {
+  opacity: 0.5;
+}
+
+.views {
+  opacity: 0.5;
+}
+
+.upvote {
+  color: #1db489;
+}
+
+.downvote {
+  color: #dc414c;
 }
 
 .cards__wrapper__sec {

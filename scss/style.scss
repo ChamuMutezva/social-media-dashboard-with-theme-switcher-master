@@ -16,6 +16,9 @@ $light-mode-text: hsl(228, 12%, 44%);
 $light-mode-card-bg: hsl(227, 47%, 96%);
 $light-mode-background-top-bg: hsl(225, 100%, 98%);
 
+$text-card-green-color: hsl(163, 72%, 41%);
+$text-card-red-color: hsl(356, 69%, 56%);
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: $dark-mode-background;
@@ -185,8 +188,7 @@ cursor: pointer;
   width: 100%;
   bottom: 0;
   border: 6px solid;  
-  border-image: linear-gradient(85deg, #fdc468, #df4996) 1;
- 
+  border-image: linear-gradient(85deg, #fdc468, #df4996) 1; 
  border-radius: 10px;
  border-bottom: none;
  border-left: none;
@@ -207,7 +209,20 @@ cursor: pointer;
 .followers__details {
     padding-bottom: 25px;
     letter-spacing: 6.5px;
+    opacity: 0.5;
 } 
+.initialCards p {
+  opacity: 0.5;
+}
+.views {
+  opacity: 0.5;
+}
+.upvote {
+  color: $text-card-green-color;
+}
+.downvote {
+  color: $text-card-red-color;
+}
 
 //secondary cards
 .cards__wrapper__sec {  
