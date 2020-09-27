@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1e202a;
+  color: white;
+  font-size: 14px;
+}
+
+.bg-background-light {
+  background-color: white;
+  color: #63687e;
+}
+
+.header {
+  padding: 39px 24px 80px 24px;
+  background-color: #1f212e;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.bg-header-background {
+  background-color: #f5f7ff;
+}
+
+.header__title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  padding-bottom: 3px;
+}
+
+.header__info {
+  padding-bottom: 20px;
+  border-bottom: 0.1px solid white;
+  font-weight: 700;
+}
+
+.switch {
+  margin-top: 0px;
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.swithCtl {
+  margin: 15px auto 0;
+  /*width: 60%;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switchLight {
+  background: #aeb3cb;
+}
+
+.switchLight:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 6px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  background-color: #1e202a;
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+main {
+  position: relative;
+  text-align: center;
+}
+
+.primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cards__wrapper {
+  position: relative;
+  margin: auto;
+  top: -42px;
+  border-radius: 10px;
+}
+
+.primary__card {
+  position: relative;
+  width: 325px;
+  background-color: #252a41;
+  border: 1px solid transparent;
+  margin: 0 auto 18px;
+  border-radius: 8px;
+  padding-bottom: 25px;
+}
+
+.primary__card:hover {
+  background-color: #373f62;
+  cursor: pointer;
+}
+
+.bg-card-background-light {
+  background-color: #f0f2fa;
+}
+
+.bg-card-background-light:hover {
+  background-color: #aeb3cb;
+}
+
+.initialCards {
+  padding: 33px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.initialCards img {
+  margin-right: 10px;
+}
+
+.primary__card::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 98%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.facebook::after {
+  border: 3px solid #1ca0f2;
+}
+
+.twitter::after {
+  border: 3px solid #1ca0f2;
+}
+
+.instagram {
+  overflow: hidden;
+}
+
+.instagram::after {
+  width: 100%;
+  bottom: 0;
+  border: 6px solid;
+  -o-border-image: linear-gradient(85deg, #fdc468, #df4996) 1;
+     border-image: linear-gradient(85deg, #fdc468, #df4996) 1;
+  border-radius: 10px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.youtube::after {
+  border: 3px solid #c4032a;
+}
+
+.followers__num {
+  font-size: 3.2rem;
+  font-weight: 700;
+  padding-bottom: 1px;
+}
+
+.followers__details {
+  padding-bottom: 25px;
+  letter-spacing: 6.5px;
+  opacity: 0.5;
+}
+
+.initialCards p {
+  opacity: 0.5;
+}
+
+.views {
+  opacity: 0.5;
+}
+
+.upvote {
+  color: #1db489;
+}
+
+.downvote {
+  color: #dc414c;
+}
+
+.cards__wrapper__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards__heading {
+  letter-spacing: 1.5px;
+  text-align: left;
+  margin-left: 24px;
+  margin-bottom: 25px;
+}
+
+.secondary__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  row-gap: 28px;
+  padding-bottom: 24px;
+}
+
+.views, .viewInfo {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 19px;
+}
+
+.secondary__card__img, .updown {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin-right: 19px;
+}
+
+.viewInfo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.secondary__card {
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 40px 161px 80px 161px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__title {
+    font-size: 1.53rem;
+  }
+  .header__info {
+    border-bottom: none;
+  }
+  nav {
+    width: 150px;
+  }
+  .cards__wrapper {
+    top: -54px;
+    margin-left: 161px;
+    margin-right: 161px;
+  }
+  .primary__card {
+    width: 250px;
+    margin: 0 15px 25px 0;
+    padding-bottom: 20px;
+  }
+  .primary__card::after {
+    width: 97%;
+  }
+  .instagram::after {
+    width: 100%;
+  }
+  .cards__heading {
+    margin-bottom: 27px;
+  }
+  .secondary__card {
+    padding-top: 28px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
